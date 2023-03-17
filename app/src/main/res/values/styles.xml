@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25dp</item>
+    </style>
+
+    <style name="NotRoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="TextStatusDescription">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextHeader">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/blue_light</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextHeaderContent">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textColor">@color/off_white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BreakLineThin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:background">@color/blue_dark</item>
+    </style>
+
+    <style name="TextCount">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:textColor">@color/blue_light</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BreakLineLarge">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:background">@color/blue_dark</item>
+    </style>
+
+    <style name="TableTextMenu">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="TableTextMenu.Selected">
+        <item name="android:textColor">@color/blue_light</item>
+    </style>
+
+</resources>
