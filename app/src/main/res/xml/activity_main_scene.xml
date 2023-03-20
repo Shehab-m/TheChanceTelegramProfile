@@ -28,13 +28,17 @@
             android:id="@+id/status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp"
-            android:text="online"
-            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" >
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/white"/>
+        </Constraint>
 
         <Constraint
             android:id="@+id/constraint_view_group"
@@ -65,11 +69,8 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="The Chance"
-            android:textSize="14sp"
-            android:textStyle="bold"
+            android:scaleX=".7"
+            android:scaleY=".7"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/imageView" />
 
@@ -77,13 +78,16 @@
             android:id="@+id/status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="16dp"
+            android:textColor="@color/grey"
+            android:scaleX=".7"
+            android:scaleY=".7"
             android:text="online"
-            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintStart_toEndOf="@id/imageView"
-            app:layout_constraintTop_toBottomOf="@id/name" />
+            app:layout_constraintStart_toStartOf="@id/name" >
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/grey"/>
+        </Constraint>
 
         <Constraint
             android:id="@+id/constraint_view_group"
@@ -102,6 +106,6 @@
         app:constraintSetStart="@+id/start">
         <OnSwipe
             app:dragDirection="dragUp"
-            app:touchAnchorId="@id/name" />
+            app:touchAnchorId="@id/nested" />
     </Transition>
 </MotionScene>
