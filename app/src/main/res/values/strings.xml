@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">TelegramProfile</string>
+    <string name="members">Members</string>
+    <string name="subscribers">Subscribers</string>
+    <string name="members_count">809</string>
+    <string name="administrators">Administrators</string>
+    <string name="admin_count">1</string>
+    <string name="media">Media</string>
+    <string name="files">Files</string>
+    <string name="links">Links</string>
+    <string name="on">On</string>
+    <string name="notification">Notification</string>
+    <string name="invite_link">Invite link</string>
+    <string name="text_link">t.me/theChance101</string>
+    <string name="info">info</string>
+    <string name="puplic_channel">puplic channel</string>
+    <string name="the_chance">The Chance</string>
 </resources>

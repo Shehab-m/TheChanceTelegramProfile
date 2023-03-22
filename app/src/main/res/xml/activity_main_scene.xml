@@ -3,41 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ConstraintSet android:id="@+id/start">
-        <Constraint
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:src="@drawable/the_chance_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Constraint
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="The Chance"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/status"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
 
         <Constraint
             android:id="@+id/status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" >
+            app:layout_constraintStart_toStartOf="parent">
 
             <CustomAttribute
                 app:attributeName="textColor"
-                app:customColorValue="@color/white"/>
+                app:customColorValue="@color/white" />
         </Constraint>
 
         <Constraint
@@ -59,8 +39,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:src="@drawable/the_chance_image"
-            app:layout_constraintCircleAngle="0"
+            android:src="@drawable/profile_img"
             app:layout_constraintStart_toEndOf="@+id/left_arrow"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -78,15 +57,16 @@
             android:id="@+id/status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/grey"
             android:scaleX=".7"
             android:scaleY=".7"
             android:text="online"
+            android:textColor="@color/grey"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="@id/name" >
+            app:layout_constraintStart_toStartOf="@id/name"
+            app:layout_constraintEnd_toEndOf="@+id/name">
             <CustomAttribute
                 app:attributeName="textColor"
-                app:customColorValue="@color/grey"/>
+                app:customColorValue="@color/grey" />
         </Constraint>
 
         <Constraint
